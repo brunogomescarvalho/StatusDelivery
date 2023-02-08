@@ -1,0 +1,10 @@
+<div class="circulos m-5">
+    <div *ngFor= "let status of listaStatus" [class]= "(status.ativo == true ? 'selecionado' : 'naoSelecionado')">
+        {{status.numero}}</div>
+</div>
+
+<div class="lista m-5">
+    <div *ngFor= "let status of listaStatus"
+        [class]= " (status.ativo == true  ? 'statusSelecionado': 'statusNaoselecionado')">{{status.numero}} -
+        {{status.descricao}}</div>
+</div>

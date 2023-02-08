@@ -1,0 +1,14 @@
+    <table class="table  table-bordered">
+        <thead>
+            <tr>
+                <th>Numero </th>
+                <th> Data </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pedido of pedidos">
+                <td>{{pedido.numero}}</td>
+                <td>{{pedido.data}}</td>
+        </tbody>
+
+<button (click)="resetar()" class="btn btn-primary">Limpar</button>

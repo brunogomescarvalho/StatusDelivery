@@ -1,0 +1,15 @@
+
+<app-linha-do-tempo [listaStatus]= "listaStatus" ></app-linha-do-tempo>
+
+    <div class="row">
+        <div class="col">
+            <select id="select" class="form-select" (change)="selecionar($event)">
+                <option selected>Selecione o status do pedido</option>
+                <option value="1"> Recebido</option>
+                <option value="2"> Em Preparação</option>
+                <option value="3"> Pronto</option>
+                <option value="4"> Entregue</option>
+            </select>
+        </div>
+    </div>
+
